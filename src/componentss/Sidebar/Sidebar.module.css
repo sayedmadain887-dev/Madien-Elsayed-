@@ -1,6 +1,6 @@
 /* Sidebar.module.css */
 /* .Fixed sidebar on the left -72px wide on desktop */
-sidebar{
+.sidebar{
     position: fixed;
     top: 0;
     left: 0;
