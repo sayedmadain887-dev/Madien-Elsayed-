@@ -1,0 +1,260 @@
+/* Home.module.css */
+/* Layout: Sidebar (72px) + Hero content left + Image right + Stats bottom */
+
+/* ===== Page Wrapper ===== */
+.page {
+  margin-left: 45px;
+  min-height: 100vh;
+  display: flex;
+  padding:120px;
+  flex-direction: column;
+  /* position:absolute;
+  inset:0;
+  background-image:url("https://media.istockphoto.com/id/2245809612/photo/ai-coding-assistant-for-developers-programming-help-code-debugging-automation-learning-code.jpg?s=1024x1024&w=is&k=20&c=leBQAUsuMJcAO3sK8wLTeVoWa3eAQmhngVmn_-bQRTg="); 
+
+  background-size:cover;
+  background-position:center;
+  z-index:0; */
+}
+.bgImage{
+  position:absolute;
+  inset:0;
+  background-image:url("https://media.istockphoto.com/id/2159692870/photo/devsecops-software-development-cycle-programming-for-finance-accounting-sale-marketing.jpg?s=1024x1024&w=is&k=20&c=hM0Em7RfC2MzNmuUMXhk4SkiyyAhcpx5EWDGUdgAwsM="); 
+
+  background-size:cover;
+  background-position:center;
+  z-index:0;
+}
+
+/* ====== Hero ======== */
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 0 80px;
+  gap: 60px;
+}
+
+/* ===== Left Side  Text ===== */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 520px;
+}
+
+.greeting {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--color-muted);
+  width: fit-content;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.nameAccent {
+  color: var(--color-accent);
+}
+
+.role {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-teal);
+  margin: 0;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #fff;
+  max-width: 440px;
+  margin: 0;
+}
+
+/* ===== Buttons ===== */
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btnPrimary:hover {
+  background-color: #f0b252;
+  transform: translateY(-2px);
+}
+
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  border: 1px solid var(--color-border);
+  color: var(--color-ink);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: border-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btnSecondary:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+/* ===== Social Links ===== */
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  padding-right:40px;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 13px;
+  font-family: var(--font-mono);
+  text-decoration: none;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.socialLink:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* ===== Right Side — Image ===== */
+.imageWrapper {
+  flex-shrink: 0;
+  width: 480px;
+  height: 560px;
+  position: relative;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.image {
+  background-image:url("https://media.istockphoto.com/id/2245809612/photo/ai-coding-assistant-for-developers-programming-help-code-debugging-automation-learning-code.jpg?s=1024x1024&w=is&k=20&c=leBQAUsuMJcAO3sK8wLTeVoWa3eAQmhngVmn_-bQRTg=");
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* ===== Stats ===== */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--color-border);
+  margin-top: auto;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 40px 20px;
+  border-right: 1px solid var(--color-border);
+  transition: background-color 0.3s ease;
+}
+
+.statItem:last-child {
+  border-right: none;
+}
+
+.statItem:hover {
+  background-color: var(--color-surface);
+}
+
+.statValue {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.statLabel {
+  font-size: 13px;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .page {
+    margin-left: 0;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    padding: 100px 24px 60px;
+    gap: 40px;
+  }
+
+  .name {
+    font-size: 44px;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: 280px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .statItem:nth-child(2) {
+    border-right: none;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+  }
+}

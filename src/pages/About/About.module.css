@@ -1,0 +1,284 @@
+/* About.module.css */
+/* About page — hero, stats, timeline, fun fact, download CV */
+
+/* ===== Page ===== */
+.page {
+  min-height: 100vh;
+  padding: 60px 80px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* ===== Hero ===== */
+.hero {
+  padding: 70px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 560px;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: #5FB9A3;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.accent {
+  color: #7C3AED;
+}
+
+.bio {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--color-muted);
+  max-width: 480px;
+  margin: 0;
+}
+
+
+.heroImag {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.imageBorder {
+  width: 100%;
+
+  height: 100%;
+  border-radius: 20px;
+  border: 1px solid #7C3AED;
+  background: linear-gradient(135deg, rgba(124,58,237,0.1), rgba(95,185,163,0.05));
+}
+
+/* ===== Stats ===== */
+.statsSection {
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 40px 0;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px;
+  border-right: 1px solid var(--color-border);
+  transition: background-color 0.3s ease;
+}
+
+.statItem:last-child {
+  border-right: none;
+}
+
+.statItem:hover {
+  background-color: var(--color-surface);
+}
+
+.statValue {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: 700;
+  color: #E8A33D;
+}
+
+.statLabel {
+  font-size: 13px;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+/* ===== Timeline ===== */
+.timelineSection {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-left: 2px solid #7C3AED;
+  padding-left: 32px;
+}
+
+.timelineItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+}
+
+.timelineItem:last-child {
+  border-bottom: none;
+}
+
+/* Dot on the timeline line */
+.timelineDot {
+  position: absolute;
+  left: -40px;
+  top: 28px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #7C3AED;
+  border: 2px solid var(--color-bg);
+}
+
+.timelineYear {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: #5FB9A3;
+  min-width: 48px;
+  padding-top: 2px;
+}
+
+.timelineContent {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.timelineTitle {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.timelineDesc {
+  font-size: 14px;
+  color: var(--color-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ===== Fun Fact ===== */
+.factSection {
+  display: flex;
+  justify-content: center;
+}
+
+.factCard {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 32px 40px;
+  border-radius: 16px;
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  background: linear-gradient(135deg, rgba(124,58,237,0.08), rgba(95,185,163,0.05));
+  max-width: 680px;
+}
+
+.factIcon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.factText {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-ink);
+  font-style: italic;
+  margin: 0;
+}
+
+/* ===== Download CV ===== */
+.cvSection {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.btnCV {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 40px;
+  background-color: #7C3AED;
+  color: #ffffff;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btnCV:hover {
+  background-color: #9333EA;
+  transform: translateY(-3px);
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .page {
+    padding: 80px 24px 60px;
+    gap: 60px;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .heroImage {
+    width: 100%;
+    height: 240px;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .statItem:nth-child(2) {
+    border-right: none;
+  }
+
+  .factCard {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+  }
+}
