@@ -152,7 +152,7 @@ function Projects() {
 
       {/* ===== Header ===== */}
       <div className={styles.header}>
-        <p className={styles.label}>// my work</p>
+        <p className={styles.label}>{"// my work"}</p>
         <h1 className={styles.title}>Projects</h1>
         <p className={styles.subtitle}>
           A collection of projects across different levels of complexity.

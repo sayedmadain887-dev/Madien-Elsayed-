@@ -97,7 +97,7 @@ function About() {
       {/* ===== Hero ===== */}
       <section ref={heroRef} className={styles.hero}>
         <div className={styles.heroText}>
-          <p className={styles.label}>// About me</p>
+          <p className={styles.label}>{"// About me"}</p>
           <h1 className={styles.title}>
             Madien<span className={styles.accent}> Elsayed</span>
           </h1>
@@ -129,7 +129,7 @@ function About() {
 
       {/* ===== Timeline ===== */}
       <section className={styles.timelineSection}>
-        <p className={styles.label}>// My journey</p>
+        <p className={styles.label}>{"// My journey"}</p>
         <h2 className={styles.sectionTitle}>Timeline</h2>
         <div ref={timelineRef} className={styles.timeline}>
           {TIMELINE.map((item, i) => (

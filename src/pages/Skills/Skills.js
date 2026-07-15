@@ -110,7 +110,7 @@ function Skills() {
   return (
     <main className={styles.page}>
       <div ref={titleRef} className={styles.header}>
-        <p className={styles.label}>// what I work with</p>
+        <p className={styles.label}>{"// what I work with"}</p>
         <h1 className={styles.title}>My Skills</h1>
         <p className={styles.subtitle}>
           Technologies and tools I use to build great web experiences.
