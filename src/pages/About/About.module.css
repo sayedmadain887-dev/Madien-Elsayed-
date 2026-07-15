@@ -1,8 +1,4 @@
-/* About.module.css */
-/* About page — hero, stats, timeline, fun fact, download CV */
-
-/* ===== Page ===== */
-.page {
+page {
   min-height: 100vh;
   padding: 60px 80px 60px;
   display: flex;
@@ -54,8 +50,7 @@
   margin: 0;
 }
 
-
-.heroImag {
+.heroImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -64,7 +59,6 @@
 
 .imageBorder {
   width: 100%;
-
   height: 100%;
   border-radius: 20px;
   border: 1px solid #7C3AED;

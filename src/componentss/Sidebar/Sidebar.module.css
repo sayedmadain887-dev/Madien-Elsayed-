@@ -1,6 +1,6 @@
 /* Sidebar.module.css */
 /* .Fixed sidebar on the left -72px wide on desktop */
-.sidebar{
+sidebar{
     position: fixed;
     top: 0;
     left: 0;
@@ -48,26 +48,31 @@
 .active{
     color: var(--color-accent);
 }
-/* Mobila burger button */
+/* Mobile burger button - bigger, clearer, sits a bit lower */
 .burger{
     display: none;
     position: fixed;
-    top: 16px;
-    left: 16px;
+    top: 28px;
+    left: 24px;
     z-index: 200;
+    width: 52px;
+    height: 52px;
     background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
+    border: 1px solid var(--color-accent);
+    border-radius: 12px;
     cursor: pointer;
     flex-direction: column;
-    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.35);
 }
 .burger span {
     display: block;
-    width: 20px;
-    height: 2px;
-    background-color: var(--color-ink);
-    border-radius: 2px;
+    width: 26px;
+    height: 3px;
+    background-color: var(--color-accent);
+    border-radius: 3px;
 }
 /* Mobile drawer  */
 .drawer{
