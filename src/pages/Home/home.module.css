@@ -8,13 +8,7 @@
   display: flex;
   padding:120px;
   flex-direction: column;
-  /* position:absolute;
-  inset:0;
-  background-image:url("https://media.istockphoto.com/id/2245809612/photo/ai-coding-assistant-for-developers-programming-help-code-debugging-automation-learning-code.jpg?s=1024x1024&w=is&k=20&c=leBQAUsuMJcAO3sK8wLTeVoWa3eAQmhngVmn_-bQRTg="); 
-
-  background-size:cover;
-  background-position:center;
-  z-index:0; */
+ 
 }
 .bgImage{
   position:absolute;
